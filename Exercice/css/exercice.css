@@ -8,3 +8,13 @@ div {
 .makeblue{
     background-color: lightblue;
 }
+
+.arial{
+    font-family: "Arial";
+}
+
+.makegreenbigyes{
+    background-color: lightgreen;
+    font-size: 18px;
+    color: white;
+}
