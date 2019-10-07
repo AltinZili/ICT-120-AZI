@@ -28,8 +28,36 @@ function destroydiv(){
     insidediv5.remove()
 }
 
+// cette fonction permet d'extraire du champ texte "Nom", la première lettre, la lettre après le dernier espace
+// et la dernière lettre de ce qui est tappé pour l'afficher dans le champ text "Initiales"
 function nametoinitials(){
-    console.log(txtName.value)
+    first = txtName.value.substr(0,1)
+    espace = txtName.value.lastIndexOf(" ")
+    second = txtName.value.substr(espace + 1, 1)
+    last = txtName.value.length
+    third = txtName.value.substr(last - 1, 1)
+    txtInitials.value = first + second + third
+}
+
+function fnAvosM(){
+    AvosM.disabled = true
+    pret.disabled = false
+    partez.hidden = false
+    partez.disabled = true
+    idempty.hidden = true
+    idmarks.hidden = false
+}
+
+function fnpret(){
+    AvosM.hidden = true
+    pret.disabled = true
+    partez.disabled = false
+    idmarks.hidden = true
+    idset.hidden = false
+}
+
+function fnpartez(){
+
 }
 
 
@@ -42,8 +70,11 @@ function init() {
     div3.addEventListener("mouseover", arial) // lorsque la div3 est survolé par la souris, appelle la fonction "arial"
     div3.addEventListener("mouseout", notarial) // lorsque la div3 n'est pas survolée par la souris, appelle la fonction "notarial"
     div4.addEventListener("click", makegreenbigyes) // lors d'un clique sur la div4, appelle la fonction "makegreenbigyes"
-    div5.addEventListener("click", destroydiv) // lors d'un click sur la div5, appelle la fonction destroydiv
-    txtName.addEventListener("keyup", nametoinitials)
+    div5.addEventListener("click", destroydiv) // lors d'un clicque sur la div5, appelle la fonction destroydiv
+    txtName.addEventListener("keyup", nametoinitials) // lorsqu'une touche est appuyée puis relâchée, appelle la fonction nametoinitials
+    AvosM.addEventListener("click", fnAvosM) // lors d'un clique sur le boutton "AvosM", appelle la fonction "fnAvosM"
+    pret.addEventListener("click", fnpret) // lors d'un clique sur le boutton "pret", appelle la fonction "fnpret"
+    partez.addEventListener("click", fnpartez) // lors d'un clique sur le boutton "partez", appelle la fonction "fnpartez"
 
 }
 
