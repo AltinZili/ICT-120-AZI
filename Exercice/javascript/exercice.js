@@ -39,6 +39,8 @@ function nametoinitials(){
     txtInitials.value = first + second + third
 }
 
+// cette fonction permet de désactiver les boutons "AvosM" et "pret", afficher le bouton "partez" en le désactivant,
+// et remplace l'image "idempty" par l'image "idmarks"
 function fnAvosM(){
     AvosM.disabled = true
     pret.disabled = false
@@ -48,6 +50,8 @@ function fnAvosM(){
     idmarks.hidden = false
 }
 
+// cette fonction permet de cacher le boutton "AvosM" de désactiver les boutons "pret" et "partez" en plus de remplacer
+// l'image "idmarks" par "idset"
 function fnpret(){
     AvosM.hidden = true
     pret.disabled = true
@@ -56,8 +60,25 @@ function fnpret(){
     idset.hidden = false
 }
 
+//Cette fonction permet pour commencer de désactiver le boutton prêt et partez tout en remplacant l'image "idset" par
+// "idgo", ensuite après 3 seconde la fonction fninitialise sera appelée
 function fnpartez(){
 
+    function fninitialise(){
+        idempty.hidden = false
+        AvosM.hidden = false
+        AvosM.disabled = false
+        idgo.hidden = true
+        partez.hidden = true
+        pret.hidden = false
+        pret.disabled = true
+    }
+
+    pret.hidden = true
+    partez.disabled = true
+    idset.hidden = true
+    idgo.hidden = false
+    setTimeout(fninitialise,3000)
 }
 
 
