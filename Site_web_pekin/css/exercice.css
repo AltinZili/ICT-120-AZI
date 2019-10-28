@@ -1,0 +1,24 @@
+#logozone {
+    left-margin: 50 px
+}
+
+div {
+    padding : 5px;
+    margin: 5px;
+    border: solid 1px black;
+    width: fit-content;
+}
+
+.makeblue{
+    background-color: lightblue;
+}
+
+.arial{
+    font-family: "Arial";
+}
+
+.makegreenbigyes{
+    background-color: lightgreen;
+    font-size: 18px;
+    color: white;
+}
