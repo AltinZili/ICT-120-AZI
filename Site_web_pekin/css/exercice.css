@@ -1,12 +1,27 @@
-#logozone {
-    left-margin: 50 px
+#logoZone{
+    float: left;
+    border-radius: 10px;
+    width: 25%;
+    padding-left: 10px;
+}
+
+#cpnvLogo {
+    width: 65%;
+}
+
+#avionLogo{
+    width: 20%;
+    margin-left: 10%;
+}
+
+#raccourciZone{
+    height: 100px;
+    width: 50px;
 }
 
 div {
-    padding : 5px;
-    margin: 5px;
+
     border: solid 1px black;
-    width: fit-content;
 }
 
 .makeblue{
