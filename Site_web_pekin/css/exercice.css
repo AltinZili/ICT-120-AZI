@@ -5,6 +5,7 @@ body{
 
 
 #logoZone{
+    position: absolute;
     float: left;
     border-radius: 10px;
     width: 25%;
@@ -21,15 +22,14 @@ body{
 }
 
 #raccourciZone{
-    float: right;
+    position: absolute;
+    left: 30%;
     height: 15%;
     width: 70%;
 }
 
 #menuZone{
-    float: bottom;
-    height: 15%;
-    width: 95%;
+
 }
 
 div {
