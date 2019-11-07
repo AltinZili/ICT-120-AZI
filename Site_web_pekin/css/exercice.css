@@ -1,3 +1,9 @@
+body{
+    padding: 5px;
+    height: 680px;
+}
+
+
 #logoZone{
     float: left;
     border-radius: 10px;
@@ -15,25 +21,18 @@
 }
 
 #raccourciZone{
-    height: 100px;
-    width: 50px;
+    float: right;
+    height: 15%;
+    width: 70%;
+}
+
+#menuZone{
+    float: bottom;
+    height: 15%;
+    width: 95%;
 }
 
 div {
 
     border: solid 1px black;
-}
-
-.makeblue{
-    background-color: lightblue;
-}
-
-.arial{
-    font-family: "Arial";
-}
-
-.makegreenbigyes{
-    background-color: lightgreen;
-    font-size: 18px;
-    color: white;
 }
