@@ -9,27 +9,34 @@ body{
     float: left;
     border-radius: 10px;
     width: 25%;
+    height: 10%;
     padding-left: 10px;
 }
 
 #cpnvLogo {
     width: 65%;
+    height: 10%;
 }
 
 #avionLogo{
-    width: 20%;
     margin-left: 10%;
+    height: 100%;
 }
 
 #raccourciZone{
     position: absolute;
     left: 30%;
-    height: 15%;
-    width: 70%;
+    right: 2%;
+    height: 10%;
+    width: 68%;
 }
 
 #menuZone{
-
+    position: absolute;
+    top: 13%;
+    right: 2%;
+    height: 10%;
+    width: 97%;
 }
 
 div {
