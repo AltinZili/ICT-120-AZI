@@ -1,7 +1,26 @@
+<<<<<<< HEAD
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+=======
 body{
     padding: 5px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 72da5e513de73e596ac19cc97062f8ed519288da
+=======
+>>>>>>> 72da5e513de73e596ac19cc97062f8ed519288da
+=======
+>>>>>>> 72da5e513de73e596ac19cc97062f8ed519288da
 }
 
+nav {
+    padding-top: 20px;
+
+}
 
 #logoZone{
     position: absolute;
@@ -12,6 +31,7 @@ body{
 }
 
 #cpnvLogo {
+
     width: 65%;
 }
 
@@ -36,6 +56,16 @@ body{
     width: 98%;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+=======
+>>>>>>> 72da5e513de73e596ac19cc97062f8ed519288da
+=======
+>>>>>>> 72da5e513de73e596ac19cc97062f8ed519288da
 div {
     border: solid 1px black;
 }
+>>>>>>> 72da5e513de73e596ac19cc97062f8ed519288da
