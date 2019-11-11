@@ -1,0 +1,143 @@
+<!-- Projet: Site web Pékin
+     Auteur: Altin Zili
+     Date: 10.11.2019
+     Version: 1.0
+     Description: html de la page hébergement du site -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- css 1 du site -->
+    <link rel="stylesheet" href="css/Site_web_pekin.css">
+    <!-- css 2 du site concernant les titres -->
+    <link rel="stylesheet" href="css/Site_web_pekin_titles.css">
+    <!-- permet d'utiliser bootstrap sur le site -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    $
+    <!-- javascript de la page du site -->
+    <script src="javascript/Site_web_pekin.js"></script>
+</head>
+
+<body>
+<div class="container-fluid border"> <!-- div prenant prenant toute la largeur de la page pour la partie supérieur du site avec les titres -->
+    <div class="row"> <!-- div dont les éléments contenus sont sur une ligne -->
+
+        <div class="border col-4"> <!-- ligne prenant 4 colonnes du tableau de page bootstrap pour les logos -->
+            <!-- images LOGOs -->
+            <img src="images/CPNV_LOGO.png" id="imageCPNV">
+            <img src="images/Avion_LOGO.jpg" id="imageAvion">
+
+        </div>
+
+        <div class="border col-8"> <!-- ligne prenant 8 colonnes du tableau de page bootstrap pour les liens et leur titre  -->
+            <h3 id="titleLinks">Liens utiles</h3> <!-- titre liens du site -->
+
+            <div id="divBorderLinks" class="row"> <!-- div prenant une ligne contenant les liens avec bordure  -->
+
+                <div id="divLinks"> <!-- div contenant les liens -->
+                    <a target="_blank" href="https://www.facebook.com/cpnv.ch/" class="linksMakeBlack">Facebook du
+                        CPNV</a>  <!-- lien hypertexte ouvrant un onglet sur la page facebook du CPNV -->
+                    |
+                    <a target="_blank" href="https://www.cpnv.ch/" class="linksMakeBlack">Site du
+                        CPNV</a>  <!-- lien hypertexte ouvrant un onglet sur le site du CPNV -->
+                    |
+                    <a target="_blank" href="http://www.hotel-regina.ch/" class="linksMakeBlack">Site de
+                        l'hébérgement</a> <!-- lien hypertexte ouvrant un onglet sur la site du lieu d'hébergement -->
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="border col-12"> <!-- div de 12 colonnes du tableau de page bootstarp pour le menu et le titre du site -->
+        <br>
+        <h1 id="titleVoyage">Voyage d'étude organisé par le CPNV</h1> <!-- titre de la page du site -->
+        <br>
+        <!-- Barre de menu comprenant les différentes sections du site -->
+        <div class="btn-group col-12" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary"><a href="./Accueil.html" style="color: white">Accueil</a>
+            </button>
+            <button type="button" class="btn btn-secondary">Participants</button>
+            <button type="button" class="btn btn-secondary">transport</button>
+            <button type="button" class="btn btn-secondary">Activités</button>
+            <button type="button" class="btn btn-secondary">Hébérgement</button>
+            <button type="button" class="btn btn-secondary">Au sujet du voyage</button>
+            <button type="button" class="btn btn-secondary">contact</button>
+        </div>
+
+    </div>
+    <br>
+
+</div>
+
+
+<div class="border col-12"> <!-- div de 12 colonnes du tableau de page bootstrap contenant le titre réservation -->
+    <h1 id="titleReservations">Réservations</h1> <!-- titre réservation -->
+</div>
+<br>
+
+
+<div class="container-fluid border"> <!-- div prenant toute la largeur de la page pour la partie inférieur du site -->
+    <div class="row"> <!-- div dont les éléments contenus sont sur une ligne -->
+
+        <div class="border col-6"> <!-- div contenant 6 colonnes du tableau bootstrap pour la partie Chambres -->
+
+            <div id="divAdressContact"> <!-- div contenant l'adresse et le contact -->
+                <span class="underline">Adresse:</span> Chemin de la rue
+                <br>
+                <span class="underline">Contact:</span> +41 76 512 27 37
+            </div>
+
+            <div id="divGestionRooms"> <!-- div dédiée à la gestion des chambres -->
+                <input type="number" id="numberRooms" placeholder="Taper no chambre" min="0" required> <!-- permet de fixer le nunmero des chambres -->
+                <input type="button" value="Ajouter" id="buttonAddRooms"> <!-- button ajoutant le numéro de chambre -->
+                <br>
+                <select id="selectRooms"> <!-- liste déroulante pour sélectionner un numéro de chambre -->
+                </select>
+                <input type="button" value="Supprimer" id="buttonDeleteRooms"> <!-- permet de fixer le nunmero des chambres -->
+                <br>
+                Nombre de lits disponibles:
+                <input type="number" name="points" id="numberBeds" max="9"> <!-- permet de fixer le nombre de lits -->
+            </div>
+
+        </div>
+
+        <div class="border col-6" id="divParticipants"><!-- div contenant 6 colonnes du tableau bootstrap, partie Participants -->
+            <label id="labelParticipants">participants</label> <!-- label de la liste des participants ajoutés -->
+            <br>
+
+            <div id="divAddParticipants"> <!-- div contenant les éléments permettant d'ajouter les Participants -->
+                <input type="text" placeholder="Taper Participant" id="textParticipants"><!-- zone de texte pour ecrire les noms des participants -->
+                <input type="button" value="Ajouter" id="buttonAddParticipants"><!-- boutton ajoutant des participants -->
+            </div>
+
+            <select multiple class="form-control" id="listParticipants"> <!-- liste des participants ajoutés -->
+            </select>
+            <br>
+
+            <div id="divDateEntree"> <!-- fixer la date d'entree à l'hébergement -->
+                Date d'entrée:
+                <input type="date" id="dateEntree">
+            </div>
+            <br>
+
+            <div id="divDateSortie"> <!-- fixer la date de sortie de l'hébergement -->
+                Date de sortie:
+                <input type="date" id="dateSortie">
+            </div>
+
+            <input type="button" value="valider réservation" id="buttonValidate" <!-- boutton permettant de valider la réservation -->
+            <label id="labelConfirmation" hidden></label> <!-- label caché qui sera activé pour afficher la date de confirmation -->
+            <input type="button" value="Supprimer" id="buttonDeleteParticipants"> <!-- button supprimant des participants -->
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

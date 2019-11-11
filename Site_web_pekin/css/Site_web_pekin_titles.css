@@ -1,0 +1,22 @@
+/*  Projet: Site web Pékin
+    Auteur: Altin Zili
+    Date: 10.11.2019
+    Version: 1.0
+    Description: CSS du site concernant les titres
+*/
+
+#titleVoyage{
+    text-align: center;
+}
+
+#titleReservations{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+
+#titleLinks{
+    display: block;
+    text-align: center;
+}
+

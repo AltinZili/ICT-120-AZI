@@ -1,0 +1,138 @@
+/*  Projet: Site web Pékin
+    Auteur: Altin Zili
+    Date: 10.11.2019
+    Version: 1.0
+    Description: permier CSS du site
+*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+body{
+    background:url("../images/background.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#divAccueilIntroduction{
+    color: white;
+    font-weight: bold;
+}
+
+.linksMakeBlack{
+    color: black;
+}
+
+#imageCPNV{
+    width: 65%;
+}
+
+#imageAvion{
+    width: 20%
+}
+
+#divBorderLinks{
+    border: 3px solid;
+}
+
+#divLinks{
+    margin: auto;
+}
+
+#divGestionRooms{
+    margin-left: 7%;
+    margin-top: 3%;
+    color: white;
+}
+
+#divAdressContact{
+    margin-left: 5%;
+    color: white;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+#numberRooms{
+    width: 145px;
+}
+
+#selectRooms{
+    width: 130px;
+}
+
+#numberBeds{
+    width: 30px;
+}
+
+#textParticipants{
+    width: 160px
+}
+
+#divDateEntree{
+    position: absolute;
+    top: 38%;
+    right: 33%;
+    color: white;
+}
+
+#dateEntree{
+    width: 140px;
+    height: 25px;
+}
+
+#divDateSortie{
+    position: absolute;
+    top: 57%;
+    right: 33%;
+    color: white;
+}
+
+#dateSortie{
+
+    width: 140px;
+    height: 25px;
+}
+
+#labelParticipants{
+    position: absolute;
+    right: 20%;
+    width: 10%;
+    color: white
+}
+
+#listParticipants{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 25%;
+}
+
+#buttonDeleteParticipants{
+    position: absolute;
+    width:25%;
+    bottom: 0%;
+    right: 5%;
+}
+
+#divAddParticipants{
+    position:absolute;
+    right: 33%;
+}
+
+
+#buttonValidate{
+    position:absolute;
+    right: 33%;
+    bottom: 0;
+}
+
+#labelConfirmation{
+    position: absolute;
+    right: 33%;
+    top: 75%;
+    color: white;
+}
