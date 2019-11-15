@@ -1,0 +1,26 @@
+<!-- Auteur: Altin
+     Projet: Examen-ICT120
+     Date: 15.11.2019
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation</title>
+    <script src="Evaluation_javascript_files/Evaluation_javascript_2.js"></script>
+</head>
+<body>
+<div class="container-fluid flex-column">
+    <h2>Bonjour <span id="spanFirstName">(prénom)</span> <span id="spanLastName">(nom)</span></h2>
+    <form action="thankyou.html">
+        <label >Veuillez décrire ci-dessous votre motivation à nous rejoindre, en au minimum 30 caractères et au maximum 144</label><br>
+        <textarea cols="60" rows="3" id="AreaEcrire"></textarea>
+        <div>Cette description est trop courte</div>
+        <div>Il vous reste <span id="spanNumber">144<span> caractères</div>
+        <input type="submit" value="Ok">
+    </form>
+</div>
+</body>
+<script>alert(window.location.search)</script>
+</html>

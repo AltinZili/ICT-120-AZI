@@ -1,0 +1,24 @@
+/*Auteur: Altin
+Projet: Examen-ICT120
+Date: 15.11.2019
+*/
+
+.red{
+    color: red;
+}
+
+#textFirstName{
+    margin-left: 65px;
+}
+
+#textLastName{
+    margin-left: 83px;
+}
+
+#passwordEntry{
+    margin-left: 31px;
+}
+
+#passwordConfirmation{
+    margin-left: 29px;
+}

@@ -1,0 +1,36 @@
+<!-- Auteur: Altin
+     Projet: Examen-ICT120
+     Date: 15.11.2019
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <script src="Evaluation_javascript_files/Evaluation_javascript_1.js"></script>
+    <link rel="stylesheet" href="Evaluation_css_files/Evaluation_css_1.css">
+    <script src="Evaluation_javascript_files/Evaluation_javascript_2.js"></script>
+</head>
+<body>
+    <h2>Inscription au tchoukball club Ste-Croix</h2>
+    <form action="motivation.html">
+        <
+        <label>Prénom</label><input type="text" name="txtFirstName" id="textFirstName">
+        <label class="red" id="labelInvalidFirstName" hidden> Invalide: trop court</label>
+        <br>
+        <label>Nom</label><input type="text" name="txtLastName" id="textLastName">
+        <label class="red" id="labelInvalidLastName"  hidden> Invalide: trop court</label>
+        <br>
+        <label>Mot de passe</label><input type="password" id="passwordEntry">
+        <label class="red" id="labelInvalidPassword" hidden> Invalide: minimum 6 caractères</label>
+        <br>
+        <label>Confirmation</label><input type="password" id="passwordConfirmation">
+        <label class="red" id="labelInvalidPasswordConfirmation" hidden> Invalide: différent</label >
+        <br>
+        <br>
+        <input type="submit" value="Envoyer" id="submitEnvoyer" disabled>
+    </form>
+</body>
+</html>
